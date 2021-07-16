@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <P>
+        1. Show an alert box on click on a link.
+    </P>
+    <a href="#" onClick="ch43q1()"> Click me to show alert box. </a>
+    <p>
+        2. Display some Mobile images in browser. On click on an image Show the message in alert to user.
+    </p>
+    <div class="one">
+        <h1>Mobile Phone Lookup</h1>
+        <ul>
+            <li><img src="IPHONE 6.jpg" alt="IPHONE" onclick="ch43q2()"></li>
+            <li><img src="SAMSUNG 6E.jpg" alt="SAMSUNG" onclick="ch43q2()"></li>
+            <li><img src="LG-V10.png" alt="LG-V10" onclick="ch43q2()"></li>
+            <li><img src="huaweip8lite-400x400.jpg" alt="p8" onclick="ch43q2()"></li>
+        </ul>
+    </div>
+    
+    <p>
+        3. Display 10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be deleted.
+    </p>
+    <div class="table">
+
+      <table border="1"> 
+            <thead> 
+                <td colspan="4">
+                Students Record 
+                </td>
+            </thead>
+            <tr>
+                <td>Index</td>
+                <td>Name</td>
+                <td>Class</td>
+            </tr>
+            <tr id="row1">
+                <td>0</td>
+                <td>Ali</td>
+                <td>x</td>
+                <td>
+                    <button onclick="deleteRow1()">Delete</button>
+                </td>
+            </tr>
+            <tr id="row2">
+                <td>1</td>
+                <td>Kamran</td>
+                <td>x</td>
+                <td>
+                    <button onclick="deleteRow2()">Delete</button>
+                </td>
+            </tr>
+            <tr id="row3">
+                <td>2</td>
+                <td>Kiran</td>
+                <td>x</td>
+                <td>
+                    <button onclick="deleteRow3()">Delete</button>
+                </td>
+            </tr>
+            <tr id="row4">
+                <td>3</td>
+                <td>Noman</td>
+                <td>x</td>
+                <td>
+                    <button onclick="deleteRow4()">Delete</button>
+                </td>
+            </tr>
+            <tr id="row5">
+                <td>4</td>
+                <td>Nasir</td>
+                <td>x</td>
+                <td>
+                    <button onclick="deleteRow5()">Delete</button>
+                </td>
+            </tr>
+            <tr id="row6">
+                <td>5</td>
+                <td>Yasir</td>
+                <td>x</td>
+                <td>
+                    <button onclick="deleteRow6()">Delete</button>
+                </td>
+            </tr>
+            <tr id="row7">
+                <td>6</td>
+                <td>Asad</td>
+                <td>x</td>
+                <td>
+                    <button onclick="deleteRow7()">Delete</button>
+                </td>
+            </tr>
+                <tr id="row8">
+                <td>8</td>
+                <td>Nazir</td>
+                <td>x</td>
+                <td>
+                    <button onclick="deleteRow8()">Delete</button>
+                </td>
+            </tr>
+            </tr>
+                <tr id="row8">
+                <td>8</td>
+                <td>Nazir</td>
+                <td>x</td>
+                <td>
+                    <button onclick="deleteRow8()">Delete</button>
+                </td>
+            </tr>
+
+             </tr>
+            <tr id="row9">
+                <td>9</td>
+                <td>Kashif</td>
+                <td>x</td>
+                <td>
+                <button onclick="deleteRow9()">Delete</button>
+                </td>
+            </tr>
+            <tr id="row10">
+                <td>10</td>
+                <td>Shahid</td>
+                <td>x</td>
+                <td>
+                <button onclick="deleteRow10()">Delete</button>
+                </td>
+            </tr>
+      </table>      
+
+    </div>
+ 
+    <p>
+        4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.
+    </p>
+    <div>
+        <img width="100px" height="120px" src="off.jpg" alt="off" onmouseover="src='on.jpg'" onmouseout="src='off.jpg'">
+    </div>
+    <p>
+        5. Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser.
+    </p>
+    <div class="counter">
+        <p id="countIt">0</p>
+        <br>
+        <button onclick="countUp()">Increase + </button>
+        <button onclick="countDown()">Decrease -</button>
+        <button onclick="resetCounter()">Reset</button>
+    </div>
+
+    
+    <a href="index.html"><button> Home</button></a>
+</body>
+<script src="app.js"></script>
+</html>
